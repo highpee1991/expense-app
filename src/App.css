@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+  background-color: rgb(36, 36, 36);
+}
+
+.app--header {
+  display: flex;
+  justify-content: center;
+  color: rgb(88, 145, 231);
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+
+.expense--app {
+  position: relative;
+  top: 2rem;
+  margin: 0 auto;
+  max-width: 40rem;
+  border-radius: 0.7rem;
+  background-color: rgb(177, 177, 177);
+}
+
+.order--item {
+  margin-bottom: 3rem;
+}

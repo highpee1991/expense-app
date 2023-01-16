@@ -1,0 +1,11 @@
+.expense---date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.expense--date_year {
+  color: red;
+  font-size: 1.3rem;
+  font-weight: bold;
+}

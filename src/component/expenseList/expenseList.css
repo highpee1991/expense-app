@@ -1,0 +1,60 @@
+.main--wrapper {
+  box-sizing: border-box;
+  padding: 1rem;
+  font-size: 0.9rem;
+  font-weight: 900;
+  font-size: 1.2rem;
+}
+
+.itemListWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(34, 34, 34);
+  color: white;
+  padding: 1rem;
+  border-radius: 0.7rem;
+}
+
+.date--item {
+  display: flex;
+  align-items: center;
+}
+
+.date-item-gotten {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 1.5rem;
+  border: 1px solid white;
+  padding: 0.6rem;
+  border-radius: 0.7rem;
+  background: rgb(177, 177, 177);
+  width: 7vw;
+  font-size: 0.9rem;
+}
+
+.amounts {
+  display: flex;
+  align-items: center;
+}
+
+.amount--gotten {
+  border: 1px solid white;
+  border-radius: 0.7rem;
+  padding: 0.3rem 0.6rem;
+  background-color: rgb(0, 17, 250);
+  color: white;
+  margin-right: 1rem;
+}
+
+.del {
+  cursor: pointer;
+  color: red;
+}
+
+.no--expense {
+  width: 30rem;
+  margin: 0 auto;
+  padding: 2rem;
+}

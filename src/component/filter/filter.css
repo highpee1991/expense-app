@@ -1,0 +1,11 @@
+.filter {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.years {
+  border: none;
+  outline: none;
+  border-radius: 0.4rem;
+}
