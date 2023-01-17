@@ -37,7 +37,7 @@ const ExpenseInput = ({ expenseData, setExpenseData, addTask }) => {
       <form className="expense--form" onSubmit={handleSubmit}>
         <div className="expense--wrapper">
           <div className="title expense--input">
-            <h2 className="expense--title">Title</h2>
+            <h2 className="expense--title expense-header">Title</h2>
             <input
               type="text"
               id="text"
@@ -49,7 +49,7 @@ const ExpenseInput = ({ expenseData, setExpenseData, addTask }) => {
             />
           </div>
           <div className="amount expense--input">
-            <h2 className="expense--amount">Amount</h2>
+            <h2 className="expense--amount expense-header">Amount</h2>
             <input
               type="number"
               name="amount"
@@ -63,7 +63,7 @@ const ExpenseInput = ({ expenseData, setExpenseData, addTask }) => {
             />
           </div>
           <div className="date expense--input">
-            <h2 className="expense--date">Date</h2>
+            <h2 className="expense--date expense-header">Date</h2>
             <input
               type="date"
               min="2021-01-01"

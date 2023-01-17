@@ -58,3 +58,47 @@
   margin: 0 auto;
   padding: 2rem;
 }
+
+@media only screen and (max-width: 670px) {
+  .main--wrapper {
+    font-weight: 400;
+    font-size: 1rem;
+  }
+
+  .date--item {
+    flex-direction: column;
+  }
+
+  .itemListWrapper {
+    flex-direction: column;
+  }
+
+  .date-item-gotten {
+    font-size: 1.2rem;
+    margin-right: 0;
+    border: none;
+    background: none;
+  }
+
+  .item--gotten {
+    font-size: 1rem;
+  }
+
+  .amount--gotten {
+    margin-right: 0;
+  }
+
+  .item {
+    margin: 1rem 0;
+  }
+
+  .del {
+    margin-left: 0.7rem;
+  }
+
+  @media only screen and (max-width: 360px) {
+    .item--gotten {
+      font-size: 0.8rem;
+    }
+  }
+}

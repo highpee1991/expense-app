@@ -11,6 +11,7 @@ body {
 }
 
 .app--header {
+  font-size: 2rem;
   display: flex;
   justify-content: center;
   color: rgb(88, 145, 231);
@@ -45,4 +46,36 @@ body {
   background-color: white;
   padding: 0 1rem;
   border-radius: 0.7rem;
+}
+
+@media only screen and (max-width: 670px) {
+  .app--header {
+    font-size: 1.4rem;
+  }
+
+  .expense--app {
+    width: 20rem;
+  }
+
+  .expenseTotal {
+    font-size: 0.8rem;
+    font-weight: bolder;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .expense--app {
+    width: 13rem;
+  }
+
+  .expenseTotal {
+    font-size: 0.8rem;
+    font-weight: bolder;
+  }
+
+  .expense-total-value {
+    background-color: white;
+    padding: 0 1rem;
+    align-self: center;
+  }
 }
