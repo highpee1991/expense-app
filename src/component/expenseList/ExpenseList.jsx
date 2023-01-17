@@ -4,6 +4,7 @@ import "./expenseList.css";
 import { FaTrash } from "react-icons/fa";
 
 const ExpenseList = ({ expenseList, handleDelete, filterYear }) => {
+  // wrerote the code to add filter method
   // const expenseData = expenseList.map((list) => {
   //   const dataItem = (
   //     <div key={list.id} className="main--wrapper">

@@ -52,6 +52,27 @@ function App() {
     setExpenseList(copy);
   };
 
+  const TotalPrice = () => {
+    const filterExpenseAmount = expenseList
+      .filter((li) => li.date.includes(filterByYear.year))
+      .map((lis) => lis.amount);
+
+    const removeAmountSign = filterExpenseAmount.map((li) =>
+      li.replace("$", "").replace(",", "")
+    );
+
+    const convertToNumbers = removeAmountSign.map(Number);
+
+    return convertToNumbers;
+  };
+
+  const sumTotal = (arr) => {
+    if (arr.length === 0) {
+      return "";
+    }
+    return arr.reduce((a, b) => a + b);
+  };
+
   return (
     <div className="app">
       <h1 className="app--header">EXPENSE TRACKER</h1>
@@ -66,12 +87,26 @@ function App() {
             setFilterByYear={setFilterByYear}
             filterByYear={filterByYear}
           />
-
           <ExpenseList
             expenseList={expenseList}
             filterYear={filterByYear.year}
             handleDelete={handleDelete}
           />
+
+          {sumTotal(TotalPrice()) && (
+            <div className="expenseTotal">
+              <div className="expense--year">
+                Sum Total Price for{" "}
+                {filterByYear.year === ""
+                  ? "All Year"
+                  : `Year ${filterByYear.year}`}
+              </div>
+
+              <div className="expense-total-value">
+                {formatter.format(sumTotal(TotalPrice()))}
+              </div>
+            </div>
+          )}
         </div>
       </div>
     </div>
