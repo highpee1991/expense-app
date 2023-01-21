@@ -96,9 +96,21 @@
     margin-left: 0.7rem;
   }
 
-  @media only screen and (max-width: 360px) {
-    .item--gotten {
-      font-size: 0.8rem;
-    }
+  .no--expense {
+    width: 12rem;
+    margin: 0 auto;
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .item--gotten {
+    font-size: 0.8rem;
+  }
+
+  .no--expense {
+    width: 8rem;
+    margin: 0 auto;
+    font-size: 0.8rem;
   }
 }

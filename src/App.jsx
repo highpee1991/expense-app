@@ -4,11 +4,14 @@ import DummyData from "./component/DummyData";
 import ExpenseInput from "./component/expenseInputs/ExpenseInput";
 import ExpenseList from "./component/expenseList/ExpenseList";
 import Filter from "./component/filter/Filter";
+import uuid from "react-uuid";
 
 function App() {
   const [expenseList, setExpenseList] = useState(
     JSON.parse(localStorage.getItem("expense")) || DummyData
   );
+
+  console.log(expenseList);
   const [expenseData, setExpenseData] = useState({
     title: "",
     amount: "",
@@ -42,7 +45,7 @@ function App() {
     copy = [
       ...copy,
       {
-        id: expenseList.length + `e${+1}`,
+        id: uuid(),
         date: expenseData.date,
         item: expenseData.title,
         amount: `${formatter.format(expenseData.amount)}`,
