@@ -11,7 +11,6 @@ function App() {
     JSON.parse(localStorage.getItem("expense")) || DummyData
   );
 
-  console.log(expenseList);
   const [expenseData, setExpenseData] = useState({
     title: "",
     amount: "",
